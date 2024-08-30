@@ -1,0 +1,52 @@
+.hero{
+    background-color: #F0F4F8;
+}
+.hero__infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 0px;
+    height: 12vh;
+}
+.hero__list{
+    display: flex;
+    gap: 15px;
+   
+}
+.hero__item{
+    color: #0000DE;
+    font-weight: 600;
+    font-size: 20px;
+} 
+.fa-magnifying-glass{
+    opacity: 0.5;
+    color: black;
+    cursor: pointer;
+}
+.hero__btns{
+    display: flex;
+    gap: 10px;
+}
+.hero__room-btn{
+    font-weight: 600;
+    padding: 9px 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    color: #0000DE;
+}
+.hero__room-btn:hover{
+    background-color: #0000DE;
+    color: white;
+}
+.hero__request-btn{
+    font-weight: 600;
+    padding: 15px 30px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    color: #0000DE;
+}
+.hero__request-btn:hover{
+    background-color: #0000DE;
+    color: white;
+}

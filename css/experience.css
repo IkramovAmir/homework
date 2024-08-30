@@ -1,0 +1,15 @@
+.experience__infos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.experience__left,
+.experience__right{
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    font-size: 36px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: white;
+}

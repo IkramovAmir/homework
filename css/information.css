@@ -1,0 +1,39 @@
+.information{
+    padding: 100px 0px;
+}
+.information__title{
+    font-size: 36px;
+    font-weight: 500;
+    padding: 40px 0px;
+}
+.information__cards{
+    display: flex;
+    gap: 15px;
+}
+.information__card{
+    padding: 10px 30px;
+    background-color: #F0F4F8;
+    border-radius: 20px;
+}
+.fa-solid{
+    font-size: 23px;
+    color: blue;
+}
+.information__card-descs{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.information__card-title{
+    font-size: 28px;
+    padding: 10px 0px;
+    padding-bottom: 10px;
+}
+.information__card-item{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: blue;
+}

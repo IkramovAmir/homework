@@ -1,0 +1,18 @@
+header{
+    background-color: #F0F4F8;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 20px 0px;
+}
+.contacts{
+    list-style-image: url(../imgs/contact.png);
+}
+
+hr{
+    margin: 0px 180px;
+}

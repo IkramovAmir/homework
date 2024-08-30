@@ -1,0 +1,41 @@
+.customer{
+    padding-top: 80px;
+    
+}
+.customer__title{
+    font-size: 36px;
+    padding: 40px 0px;
+}
+.customer__infos{
+    background-color: #F0F4F8;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding-bottom: 20px;
+}
+.customer__cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.customer__card-img img{
+    width: 350px;
+}
+.customer__card-name{
+    padding-top: 10px;
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+.customer__btn{
+    padding: 15px 40px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: blue;
+    margin: 0px 0px;
+    margin-left: 480px;
+}
+.customer__btn:hover{
+    background-color: blue;
+    color: white;
+}

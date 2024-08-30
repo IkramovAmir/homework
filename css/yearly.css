@@ -1,0 +1,83 @@
+.yearly__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    gap: 50px;
+    height: 71vh;
+}
+.left__title{
+    font-size: 50px;
+    width: 700px;
+}
+.left__desc{
+    font-size: 20px;
+    padding: 30px 0px;
+}
+.left__btns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left__invest-btn{
+    font-weight: 600;
+    padding: 15px 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    color: #0000DE;
+}
+.left__invest-btn:hover{
+    background-color: #0000DE;
+    color: white;
+}
+.left__invest-btn2{
+    font-weight: 600;
+    padding: 15px 40px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    color: #0000DE;
+}
+.left__invest-btn2:hover{
+    background-color: #0000DE;
+    color: white;
+}
+.left__dot-imgs img{
+    width: 15px;
+}
+.right{
+    position: relative;
+}
+.right__img img{
+    width: 400px;
+    padding: 0;
+}
+.right__img2{
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+.right__img2 img{
+    width: 400px;
+}
+.right__btns{
+    position: absolute;
+    right: -80px;
+    bottom: 40px;
+    
+}
+.right__left-btn{
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+}
+.right__left-btn:hover{
+    background-color: skyblue;
+}
+.right__right-btn:hover{
+    background-color: skyblue;
+}
+.right__right-btn{
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+}

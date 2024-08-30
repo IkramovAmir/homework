@@ -1,0 +1,73 @@
+.finance{
+    padding-top: 100px;
+}
+.finance__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:120px;
+}
+.finance__title{
+    font-size: 30px;
+    padding-bottom:40px;
+}
+.finance__card-img{
+    display: flex;
+    align-items: center;
+    width: 280px;
+}
+.finance__card-statistics{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.finance__card-statistic{
+    padding-top: 30px;
+}
+.finance__card-statistic-desc{
+    width: 100px;
+}
+.finance__card-statistic-desc:hover{
+    color: blue;
+    cursor: pointer;
+}
+.finance__card-imgg{
+    padding-top: 60px;
+}
+.finance__card-infos{
+    display: flex;
+    padding-top: 30px;
+}
+.finance__card-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.finance__card-info-desc{
+    width: 100px;
+}
+.finance__info{
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 110px;
+}
+.finance__card-btn{
+    padding: 20px 60px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: blue;
+}
+.finance__card-btn:hover{
+    background-color: blue;
+    color: white;
+}
+.finance__card-midle-img img{
+    width: 100px;
+}
+.finance__card-midle-desc{
+    padding: 5px 0px;
+}
+.finance__card-right-desc{
+    padding: 5px 0px;
+}
