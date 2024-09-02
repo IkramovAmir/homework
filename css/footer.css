@@ -57,3 +57,49 @@ input{
     padding: 30px 0px;
     gap: 60px;
 }
+@media(max-width:1300px){
+    .footer__search i{
+        display: none;
+    }
+    .footer__search{
+        flex-wrap: wrap;
+    }
+
+    .footer__search input{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .footer__cards{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:276px){
+    .footer__logo{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .footer__logo img{
+        width: 100%;
+    }
+    .footer__card-item{
+        font-size: 14px;
+    }
+    .footer__card-title{
+        font-size: 17px;
+    }
+    .footer__card-number{
+        font-size: 17px;
+    }
+    .footer__card-location{
+        font-size: 15px;
+    }
+    .footer__card-link{
+        font-size: 13px;
+    }
+    .footer__card-time{
+        font-size: 13px;
+    }
+    .footer__card-lastinfos-dates{
+        flex-wrap: wrap;
+    }
+}

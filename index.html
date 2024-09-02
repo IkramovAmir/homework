@@ -12,23 +12,27 @@
 </head>
 
 <body>
-    <header class="">
-        <nav class="header__nav container">
-            <p>Инвестиционно-финансовая компания</p>
-            <p>Город Казань</p>
-            <p>О компании</p>
-            <p>Отзывы</p>
-            <p>Халяль подробно</p>
-            <p>Отчетность</p>
-            <p>Наши партнеры</p>
-            <p>Сотрудничество</p>
-            <p>Контакты</p>
+    <header>
+        <div class="header container">
+            <ul class="header__list container">
+                <li class="head__item">Инвестиционно-финансовая компания</li>
+                <li class="head__item">Город Казань</li>
+                <li class="head__item">О компании</li>
+                <li class="head__item">Отзывы</li>
+                <li class="head__item">Халяль подробно</li>
+                <li class="head__item">Отчетность</li>
+                <li class="head__item">Наши партнеры</li>
+                <li class="head__item">Сотрудничество</li>
+                <li class="head__item">Контакты</li>
+                <i class="header__btn-close fa-solid fa-x"></i>
+            </ul>
+            <button class="about__us-btn"><i class="fa-solid fa-arrow-left"></i> About us</button>
             <select name="lang" id="lang">
                 <option value="Uzb"><a href="#">Uzb</a></option>
                 <option value="Rus"><a href="#">Rus</a></option>
                 <option value="Eng"><a href="#">Eng</a></option>
             </select>
-        </nav>
+        </div>
         <hr>
     </header>
     <main>
@@ -54,14 +58,6 @@
                     <div class="left__btns">
                         <button class="left__invest-btn">Инвестировать</button>
                         <button class="left__invest-btn2">Подробнее</button>
-                        <div class="left__dot-imgs">
-                            <img src="./imgs/herodotimg.png" alt="">
-                            <img src="./imgs/herodotimg.png" alt="">
-                            <img src="./imgs/herodotimg2.png" alt="">
-                            <img src="./imgs/herodotimg.png" alt="">
-                            <img src="./imgs/herodotimg.png" alt="">
-                        </div>
-
                     </div>
                 </div>
                 <div class="right">
@@ -219,7 +215,7 @@
                         </div>
                     </div>
                     <div class="finance__card">
-                        <p class="finance__card-desc">Получайте повышенный доход от вложений</p>
+                        <p class="finance__card-desc2">Получайте повышенный доход от вложений</p>
                         <div class="finance__card-statistics">
                             <div class="finance__card-statistic">
                                 <h2 class="finance__card-statistic-per">до 8%</h2>
@@ -245,7 +241,7 @@
                                     в недвижимость </p>
                             </div>
                         </div>
-                        <p class="finance__card-desc">Возвращайте свои средства вовремя</p>
+                        <p class="finance__card-desc3">Возвращайте свои средства вовремя</p>
                     </div>
                     <div class="finance__card">
                         <p class="finance__card-title">Инвестируйте со стабильным результатом</p>
@@ -367,7 +363,7 @@
     <footer>
         <section class="footer__infos container">
             <div class="footer__search">
-                <div class="footer__logo"><img src="./imgs/logo.png" alt=""></div>
+                <div class="footer__logo"><a href="./index.html"><img src="./imgs/logo.png" alt=""></a></div>
                 <i class="input fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="Поиск по услугам">
             </div>
@@ -378,9 +374,9 @@
                     <h3 class="footer__card-location">Казань, ул. Мавлютова, дом 31</h3>
                     <p class="footer__card-time">Мы работаем с 08:00 до 20:00</p>
                     <div class="footer__card-logos"><img src="./imgs/facebooklogo.png" alt="">
-                        <img src="./imgs/whatsuplogo.png" alt="">
-                        <img src="./imgs/telgramlogo.png" alt="">
-                        <img src="./imgs/yutubelogo.png" alt=""><img src="./imgs/instagramlogo.png" alt="">
+                        <a href="https://web.telegram.org/k/"><img src="./imgs/whatsuplogo.png" alt=""></a>
+                      <a href="https://web.telegram.org/k/">  <img src="./imgs/telgramlogo.png" alt=""></a>
+                       <a href="https://web.telegram.org/k/amir_12.01"> <img src="./imgs/yutubelogo.png" alt=""></a><a href="https://www.instagram.com/"><img src="./imgs/instagramlogo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer__card">
@@ -388,11 +384,11 @@
                         Инвестиции
                     </h2>
                     <ul class="footer__card-list">
-                        <li class="footer__card-item">Вклад Накопительный</li>
-                        <li class="footer__card-item">Вклад Активный</li>
-                        <li class="footer__card-item">Вклад Комфорт</li>
-                        <li class="footer__card-item">Калькулятор</li>
-                        <li class="footer__card-item">Отзывы по инвестициям</li>
+                        <li class="footer__card-item"><a href="#">Вклад Накопительный</a></li>
+                        <li class="footer__card-item"><a href="#">Вклад Активный</a></li>
+                        <li class="footer__card-item"><a href="#">Вклад Комфорт</a></li>
+                        <li class="footer__card-item"><a href="#">Калькулятор</a></li>
+                        <li class="footer__card-item"><a href="#">Отзывы по инвестициям</a></li>
                     </ul>
                 </div>
                 <div class="footer__card">
@@ -400,11 +396,11 @@
                         Рассрочка
                     </h2>
                     <ul class="footer__card-list">
-                        <li class="footer__card-item">АвтоРассрочка</li>
-                        <li class="footer__card-item">Долевое финансирование</li>
-                        <li class="footer__card-item">Долговое финансирование</li>
-                        <li class="footer__card-item">Калькулятор</li>
-                        <li class="footer__card-item">Отзывы по займам</li>
+                        <li class="footer__card-item"><a href="#">АвтоРассрочка</a></li>
+                        <li class="footer__card-item"><a href="#">Долевое финансирование</a></li>
+                        <li class="footer__card-item"><a href="#">Долговое финансирование</a></li>
+                        <li class="footer__card-item"><a href="#">Калькулятор</a></li>
+                        <li class="footer__card-item"><a href="#">Отзывы по займам</a></li>
                     </ul>
                 </div>
                 <div class="footer__card">
@@ -412,11 +408,11 @@
                         Компания
                     </h2>
                     <ul class="footer__card-list">
-                        <li class="footer__card-item">О компании</li>
-                        <li class="footer__card-item">Новости</li>
-                        <li class="footer__card-item">Отчетность</li>
-                        <li class="footer__card-item">Сотрудничество</li>
-                        <li class="footer__card-item">Реквизиты</li>
+                        <li class="footer__card-item"><a href="#">О компании</a></li>
+                        <li class="footer__card-item"><a href="#">Новости</a></li>
+                        <li class="footer__card-item"><a href="#">Отчетность</a></li>
+                        <li class="footer__card-item"><a href="#">Сотрудничество</a></li>
+                        <li class="footer__card-item"><a href="#">Реквизиты</a></li>
                     </ul>
                 </div>
                 <div class="footer__card">
@@ -424,11 +420,11 @@
                         Информация
                     </h2>
                     <ul class="footer__card-list">
-                        <li class="footer__card-item">Халяль подробно</li>
-                        <li class="footer__card-item">Наши партнеры</li>
-                        <li class="footer__card-item">Частые вопросы</li>
-                        <li class="footer__card-item">Личный кабинет</li>
-                        <li class="footer__card-item">Контакты</li>
+                        <li class="footer__card-item"><a href="#">Халяль подробно</a></li>
+                        <li class="footer__card-item"><a href="#">Наши партнеры</a></li>
+                        <li class="footer__card-item"><a href="#">Частые вопросы</a></li>
+                        <li class="footer__card-item"><a href="#">Личный кабинет</a></li>
+                        <li class="footer__card-item"><a href="#">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -448,6 +444,11 @@
             </div>
         </section>
     </footer>
+
+
+
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

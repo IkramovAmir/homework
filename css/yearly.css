@@ -81,3 +81,75 @@
     border-radius: 50%;
     border: none;
 }
+@media(max-width:1400px){
+    .yearly__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 100px 80px;
+        height: 150vh;
+    }
+    .left__btns{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left__title{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .left__desc{
+        text-align: center;
+    }
+    .right__img img{
+        width: 100%;
+    }
+    .right__img2 img{
+        width: 100%;
+    }
+}
+@media(max-width:475px){
+    .yearly__info{
+        margin: 100px 30px;
+
+    }
+    .right__btns{
+        display: none;
+    }
+    .left__title{
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .left__desc{
+        font-size: 13px ;
+    }
+    .left__invest-btn{
+        padding: 4px 10px;
+        font-size: 12px;
+        width: 100%;
+    }
+    .left__invest-btn2{
+        padding: 4px 10px;
+        font-size: 12px;
+        width: 100%;
+    }
+}
+@media(max-width:200px){
+    .left__btns{
+        width: 100%;
+    }
+    .yearly__info{
+        margin: 150px 25px;
+        height: 100vh;
+    }
+    .left__title{
+        font-size: 12px;
+
+    }
+    .left__desc{
+        font-size: 8px;
+    }
+}

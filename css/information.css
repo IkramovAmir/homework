@@ -37,3 +37,28 @@
     gap: 10px;
     color: blue;
 }
+@media(max-width:777px){
+    .information__cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+@media(max-width:282px){
+    .information__title{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    .information__card-title{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+
+    }
+    .information__card{
+        padding: 5px 10px;
+        margin: 0px 5px;
+        font-size: 10px;
+    }
+}

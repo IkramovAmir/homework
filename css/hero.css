@@ -12,7 +12,7 @@
 .hero__list{
     display: flex;
     gap: 15px;
-   
+   justify-content: center;
 }
 .hero__item{
     color: #0000DE;
@@ -49,4 +49,36 @@
 .hero__request-btn:hover{
     background-color: #0000DE;
     color: white;
+}
+.hero__item:nth-child(4){
+    width: 100%px;
+}
+.hero__list{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.hero__logo img{
+    width: 100%;
+}
+@media(max-width:1400px){
+    .hero__infos{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:477px){
+    .hero__item{
+        font-size: 15px;
+    }
+    .hero__btns{
+        flex-wrap: wrap;
+        
+    }
+    .hero__room-btn{
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    .hero__request-btn{
+        font-size: 10px;
+        padding: 4px 8px;
+    }
 }

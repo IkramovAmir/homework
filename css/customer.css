@@ -39,3 +39,33 @@
     background-color: blue;
     color: white;
 }
+@media(max-width:1300px){
+    .customer__cards{
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+     .customer__btn{
+        margin-left: 0;
+    }
+}
+@media(max-width:520px){
+    .customer__card-img img{
+        width: 100%;
+    }
+    .customer__title{
+        font-size: 17px;
+    }
+    .customer__card-name{
+        font-size: 17px;
+    }
+    .customer__card-desc{
+        font-size: 14px;
+    }
+   
+}
+@media(max-width:200px){
+    .customer__btn{
+        padding:5px 10px ;
+        font-size: 10px;
+    }
+}
