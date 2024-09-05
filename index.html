@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -172,6 +173,26 @@
                 </div>
 
             </div>
+        </section>
+        <section class="swiper">
+            <div #swiperRef="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/heroimg.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/customerimg2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/customerimg.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/cusromerimg3.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <p class="append-buttons">
+                <button class="prepend-2-slides">Prepend 2 Slides</button>
+                <button class="prepend-slide">Prepend Slide</button>
+                <button class="append-slide">Append Slide</button>
+                <button class="append-2-slides">Append 2 Slides</button>
+            </p>
         </section>
         <section class="experience container">
             <div class="experience__infos">
@@ -375,8 +396,9 @@
                     <p class="footer__card-time">Мы работаем с 08:00 до 20:00</p>
                     <div class="footer__card-logos"><img src="./imgs/facebooklogo.png" alt="">
                         <a href="https://web.telegram.org/k/"><img src="./imgs/whatsuplogo.png" alt=""></a>
-                      <a href="https://web.telegram.org/k/">  <img src="./imgs/telgramlogo.png" alt=""></a>
-                       <a href="https://web.telegram.org/k/amir_12.01"> <img src="./imgs/yutubelogo.png" alt=""></a><a href="https://www.instagram.com/"><img src="./imgs/instagramlogo.png" alt=""></a>
+                        <a href="https://web.telegram.org/k/"> <img src="./imgs/telgramlogo.png" alt=""></a>
+                        <a href="https://web.telegram.org/k/amir_12.01"> <img src="./imgs/yutubelogo.png" alt=""></a><a
+                            href="https://www.instagram.com/"><img src="./imgs/instagramlogo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="footer__card">
@@ -448,7 +470,62 @@
 
 
 
-    <script src="./js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
+    </script>
 </body>
 
 </html>
